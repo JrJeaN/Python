@@ -1,0 +1,34 @@
+cumle = input("Bir Cümle Giriniz: ")
+
+Buyultme = cumle.upper()
+
+print(Buyultme)
+
+
+# Kullanıcıdan bir cümle alma ve büyük harfe çevirme
+cumle = input("Bir Cümle Giriniz: ")
+Buyultme = cumle.upper()
+print(Buyultme)
+
+# Kullanıcıdan bir cümle alma ve büyük harfe çevirme
+cumle = input("Bir Cümle Giriniz: ")
+Buyultme = cumle.upper()
+print(Buyultme)
+
+# Alışveriş Listesi
+liste = ["Elma", "Armut", "Çilek"]
+
+# Listeye yeni ürünler ekleme
+liste.append("Portakal")
+liste.append("Kivi")
+
+# Listeden bir ürün silme
+liste.remove("Elma")
+
+# Güncel listeyi ekrana yazdırma
+print("Güncel Alışveriş Listesi:")
+for urun in liste:
+print(urun)  
+
+
+
