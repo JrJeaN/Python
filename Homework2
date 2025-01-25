@@ -1,0 +1,15 @@
+sayı1 = float(input("Bir Sayı Giriniz: "))
+
+sayı2 = float(input("Bir Sayı Giriniz: "))
+
+Toplam = sayı1 + sayı2
+
+Çıkarma = sayı1 - sayı2
+
+Çarpma = sayı1 * sayı2
+
+print("Sayıların Toplamı: ", Toplam)
+
+print("Sayıların Farkı: ", Çıkarma)
+
+print("Sayıların Çarpımı: ", Çarpma)
