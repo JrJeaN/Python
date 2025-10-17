@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv Website</title>
+    <!-- Font Awesome (ikonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * { 
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            color: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        .section-1 {
+            width: 100%;
+            padding: 85px 20px;
+            background-color: white;
+        }
+
+        .main {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .section-1-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .section-1-text h1 {
+            color: #222;
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .section-1-text h5 {
+            color: #444;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .section-1-text p {
+            color: #333;
+            font-size: 20px;
+            line-height: 35px;
+            margin-bottom: 35px;
+            max-width: 600px;
+        }
+
+        .section-1 img {
+            width: 250px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 2px solid #f08080;
+        }
+
+        button {
+            color: white;
+            background-color: #f44336;
+            font-weight: 600;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 35px;
+            transition: color 0.5s, background-color 0.5s;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: #f44336;
+            background-color: white;
+            border: 2px solid #f44336;
+        }
+
+        /* ---- FOOTER ---- */
+        footer {
+            width: 100%;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 30px 0;
+            border-top: 2px solid #f44336;
+        }
+
+        .footer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .footer-item i {
+            color: #f44336;
+            font-size: 18px;
+        }
+
+        footer p {
+            margin-top: 20px;
+            font-size: 15px;
+            color: #666;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section-1-text h1 {
+                font-size: 50px;
+            }
+
+            .section-1 img {
+                width: 200px;
+                height: 250px;
+                margin-top: 30px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="section-1">
+        <div class="main">
+            <div class="section-1-text">
+                <h1>Mustafa Hasırcı</h1>
+                <h5>Student Number : 241015064</h5>
+                <p>I’m 20 years old and originally from Ankara. I’m studying Computer Engineering at Düzce University. 
+                I’m interested in technology, coding, and problem-solving. In my free time, 
+                I enjoy listening to music, watching movies, and learning new things. This year, 
+                I started learning C++ and aim to improve myself in the field of software
+                thanks to my interest in different programming languages.</p>
+                <button>Contact : mustafa_efehas@hotmail.com</button>
+            </div>
+            <img src="1.jpg.png" alt="Profile Photo">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+90 552 687 38 19</span>
+            </div>
+            <div class="footer-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>mustafa_efehas@hotmail.com</span>
+            </div>
+            <div class="footer-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Düzce, Türkiye</span>
+            </div>
+        </div>
+
+        <p>Mustafa Hasırcı © All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
