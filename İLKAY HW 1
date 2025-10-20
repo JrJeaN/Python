@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İlkay Eren Gezer | Kişisel Web Sitesi</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Merhaba, ben <span>İlkay Eren Gezer</span></h1>
+    <p>Düzce Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Yazılıma ve spora ilgi duyuyorum.</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Hakkımda</h2>
+    <p>Yazılım geliştirme alanında kendimi sürekli geliştirmeye çalışıyorum. Front-end teknolojileriyle ilgileniyorum ve web tasarımıyla uğraşmayı seviyorum. Boş zamanlarımda spor yapar, teknoloji haberlerini takip ederim.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>Yeteneklerim</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Temel C ve Python bilgisi</li>
+      <li>Takım çalışması ve problem çözme</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>İletişim</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Adınız" required>
+      <input type="email" placeholder="E-posta Adresiniz" required>
+      <textarea placeholder="Mesajınız" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+    <p class="email">📧 gezerilkayeren81@gmail.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 İlkay Eren Gezer | Tüm Hakları Saklıdır</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+/* Genel ayarlar */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Hero alanı */
+.hero {
+  background-color: #40e0d0; /* Turkuvaz */
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero span {
+  font-weight: bold;
+}
+
+/* Bölüm başlıkları */
+section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #009c9c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Yetenek listesi */
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #e0f7f5;
+  border-left: 4px solid #40e0d0;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+/* İletişim formu */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.contact button {
+  background-color: #40e0d0;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background-color: #30b8a8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #009c9c;
+  color: white;
+  padding: 15px;
+}
+/ Basit iletişim formu bildirimi
+document.getElementById("contactForm").addEventListener("submit", function(event){
+  event.preventDefault();
+  alert("Mesajınız başarıyla gönderildi! Teşekkürler 😊");
+});
